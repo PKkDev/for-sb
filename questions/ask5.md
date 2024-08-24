@@ -6,7 +6,7 @@
 
 ### Ответ
 
-[Дирекативы](https://angular.dev/guide/directives)
+1) [Дирекативы](https://angular.dev/guide/directives)
 
 Angular директивы используются для изменения внешнего вида или поведения DOM-элемента. Выделяют три типа директив:
 
