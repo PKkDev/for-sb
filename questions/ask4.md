@@ -9,12 +9,12 @@
 1) [Преобразование типов](https://learn.javascript.ru/type-conversions)
 2) [Преобразование типов + Типы данных](https://doka-guide.vercel.app/js/typecasting/)
 
-.toString()
-+
-+ ''
-Number()
-Boolean()
-String()
+1) .toString()
+2) `+`
+3) `+ ''`
+4) Number()
+5) Boolean()
+6) String()
 
 ### задача
 

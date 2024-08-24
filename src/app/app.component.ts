@@ -1,12 +1,11 @@
-import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, OnChanges {
-  title = 'for-sb';
+export class AppComponent {
 
   constructor() {
     this.taskOne();
@@ -15,24 +14,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
     this.taskFour();
   }
 
-  ngOnInit(): void {
-    console.log('par - ngOnInit');
-  }
-
-  ngAfterViewInit(): void {
-    console.log('par - ngAfterViewInit');
-  }
-
-  ngAfterContentInit(): void {
-    console.log('Chl - ngAfterContentInit');
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('par - ngOnChanges');
-  }
-
   private taskOne() {
-    console.log('--------------taskFour--------------')
+    console.log('--------------taskOne--------------')
 
     let a = 'dd';
     let a1 = a;
@@ -50,7 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
   }
 
   private taskTwo() {
-    console.log('--------------taskOne--------------')
+    console.log('--------------taskTwo--------------')
 
     let a = null;
     let b = undefined;
@@ -84,7 +67,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
   }
 
   private taskThree() {
-    console.log('--------------taskTwo--------------')
+    console.log('--------------taskThree--------------')
 
     let a: any = "6";
     let b: any = "3";
@@ -124,7 +107,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
   }
 
   private taskFour() {
-    console.log('--------------taskThree--------------')
+    console.log('--------------taskFour--------------')
 
     let a = Number.MAX_VALUE + 1;
     let b = Number.MAX_VALUE + 2;
@@ -154,6 +137,5 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
     console.log(`Number(undefined)`, Number(undefined));
     console.log(`Number(null)`, Number(null));
   }
-
 
 }

@@ -2,15 +2,12 @@
 
 ### Вопрос 
 
- Что такое `Lazy-loading`? 
+ Что такое `ControlValueAccessor`? 
 
 ### Ответ
 
-1) [Lazy-loading](https://angular.dev/guide/ngmodules/lazy-loading)   
+1) [ControlValueAccessor-ang](https://angular.dev/api/forms/ControlValueAccessor) 
+2) [ControlValueAccessor-tut](https://medium.com/@majdasab/implementing-control-value-accessor-in-angular-1b89f2f84ebf) 
 
-По умолчанию NgModules загружаются `быстро`. Это означает, что как только приложение загружается, то же самое делают все NgModules, независимо от того, нужны они немедленно или нет. 
-
-Для больших приложений с большим количеством маршрутов рассмотрите отложенную загрузку — шаблон проектирования, который загружает NgModules по мере необходимости. 
-
-Отложенная загрузка помогает уменьшить начальные размеры пакета, что, в свою очередь, помогает сократить время загрузки.
+Определяет интерфейс, который действует как мост между API Angular forms и собственным элементом в DOM.
   

@@ -7,6 +7,11 @@
 
 ### Ответ
 
+1) [Поверхностное и глубокое копирование](https://doka-guide.vercel.app/js/shallow-or-deep-clone/)
+
+1) Object.assign()
+2) спред-синтаксис ...
+
 ### задача
 
 ```javascript
