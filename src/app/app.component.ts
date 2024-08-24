@@ -32,6 +32,24 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
   }
 
   private taskOne() {
+    console.log('--------------taskFour--------------')
+
+    let a = 'dd';
+    let a1 = a;
+    a += "cc";
+    console.log('a, a1', a, a1)
+
+    console.log('--------------')
+
+    let b = {
+      name: "aaa"
+    };
+    let b1 = b;
+    b1.name = 'bbb'
+    console.log('b, b1', b, b1)
+  }
+
+  private taskTwo() {
     console.log('--------------taskOne--------------')
 
     let a = null;
@@ -65,7 +83,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
     console.log(`isNaN(d)`, isNaN(d));
   }
 
-  private taskTwo() {
+  private taskThree() {
     console.log('--------------taskTwo--------------')
 
     let a: any = "6";
@@ -85,9 +103,27 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
     console.log(`d === e`, d === e);
     console.log(`c == e`, c == e);
     console.log(`c === e`, c === e);
+
+    console.log('--------------')
+
+    console.log(`5 == new Number(5)`, 5 == new Number(5));
+    console.log(`5 === new Number(5)`, 5 === new Number(5));
+
+    console.log('--------------')
+
+    console.log(`"abs" == "abs"`, "abs" == "abs");
+    console.log(`"abs" === "abs"`, "abs" === "abs");
+
+    console.log('--------------')
+
+    let f = { name: "aaa" };
+    let f1 = { name: "aaa" };
+    let f3 = f1;
+    console.log(`f == f1`, f == f1);
+    console.log(`f1 == f3`, f1 == f3);
   }
 
-  private taskThree() {
+  private taskFour() {
     console.log('--------------taskThree--------------')
 
     let a = Number.MAX_VALUE + 1;
@@ -119,21 +155,5 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, On
     console.log(`Number(null)`, Number(null));
   }
 
-  private taskFour() {
-    console.log('--------------taskFour--------------')
 
-    let a = 'dd';
-    let a1 = a;
-    a += "cc";
-    console.log('a, a1', a, a1)
-
-    console.log('--------------')
-
-    let b = {
-      name: "aaa"
-    };
-    let b1 = b;
-    b1.name = 'bbb'
-    console.log('b, b1', b, b1)
-  }
 }

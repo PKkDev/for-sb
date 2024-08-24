@@ -2,35 +2,52 @@
 
 ### Вопрос
 
-В чем разница между "==" и "==="?
+В чем разница между Null, NaN и undefined?
 
 ### Ответ
 
-"==" выполняет произвольную операцию равенства между своими операндами и вводит принудительный тип.
-Это означает, что если вы используете "==" между двумя значениями разных типов, JavaScript пытается преобразовать тип одного операнда в тип другого, чтобы получить результат.
+1) [stackoverflow](https://stackoverflow.com/questions/50320711/what-is-the-difference-between-null-nan-and-undefined-in-javascript)
+1) [medium](https://medium.com/@stheodorejohn/null-nan-and-undefined-understanding-absence-and-invalidity-in-javascript-5ebd3fa918ee)
+1) [Типы данных](https://learn.javascript.ru/types)
 
-В то время как "===" выполняет строгое равенство и не пытается преобразовать тип любого значения. Он проверяет, совпадают ли типы значений. В противном случае возвращается false.
+NaN: Not a number: Как следует из названия, оно используется для обозначения того, что значение объекта не является числом. Существует множество способов, которыми вы можете сгенерировать эту ошибку, одним из которых являются недопустимые математические операции, такие как 0/0 или sqrt(-1)
+
+undefined: Это означает, что объект не имеет никакого значения, следовательно, не определен. Это происходит, когда вы создаете переменную и не присваиваете ей значение.
+
+null: Это означает, что объект пуст и не указывает ни на какой адрес в памяти.
 
 ### задача
 
 ```javascript
 
-    let a: any = "6";
-    let b: any = "3";
-    let b1 = b;
-    console.log(`a == b`, a == b);
-    console.log(`a === b`, a === b);
-    console.log(`b1 == b`, b1 == b);
-    console.log(`b1 === b`, b1 === b);
+    let a = null;
+    let b = undefined;
+    let c = 0;
+    let d = NaN;
+
+    console.log(`typeof(a)`, typeof (a));
+    console.log(`typeof(b)`, typeof (b));
+    console.log(`typeof(c)`, typeof (c));
+    console.log(`typeof(d)`, typeof (d));
+    
+    console.log('--------------')
+
+    console.log(`a ?? 'none'`, a ?? 'none');
+    console.log(`b ?? 'none'`, b ?? 'none');
+    console.log(`c ?? 'none'`, c ?? 'none');
+    console.log(`d ?? 'none'`, d ?? 'none');
 
     console.log('--------------')
-    
-    let d = null;
-    let e = undefined;
-    let c = 0;
-    console.log(`d == e`, d == e);
-    console.log(`d === e`, d === e);
-    console.log(`c == e`, c == e);
-    console.log(`c === e`, c === e);
+
+    if (a) { console.log(`if (a)`, true) } else { console.log(`if (a)`, false) }
+    if (b) { console.log(`if (b)`, true) } else { console.log(`if (b)`, false) }
+    if (c) { console.log(`if (c)`, true) } else { console.log(`if (c)`, false) }
+    if (d) { console.log(`if (d)`, true) } else { console.log(`if (d)`, false) }
+
+    console.log('--------------')
+
+    console.log(`!d`, !d);
+    console.log(`!!d`, !!d);
+    console.log(`isNaN(d)`, isNaN(d));
 
 ```
