@@ -1,4 +1,4 @@
-import { Component, } from '@angular/core';
+import { Component, NgZone,} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +7,13 @@ import { Component, } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {
+  constructor(private ngZone: NgZone) {
     this.taskOne();
     this.taskTwo();
     this.taskThree();
-    this.taskFour();
+    this.taskFour(); 
+
+    ngZone.runOutsideAngular(()=>{})
   }
 
   private taskOne() {
@@ -138,4 +140,5 @@ export class AppComponent {
     console.log(`Number(null)`, Number(null));
   }
 
-}
+} 
+

@@ -13,6 +13,12 @@
 2) [standalone](https://angular.dev/guide/components/importing)
 3) [xxxxxx](xxxxxxx)
 
+
+1) @Input()
+2) @Output() и EventEmitter
+3) ViewChild
+4) Через сервис
+
 ### задача
 
 ```javascript
