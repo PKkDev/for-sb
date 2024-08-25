@@ -11,6 +11,7 @@
 
 1) Object.assign()
 2) спред-синтаксис ...
+3) JSON.parse(JSON.stringify())
 
 ### задача
 
