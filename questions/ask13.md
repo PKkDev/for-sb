@@ -12,6 +12,3 @@
 3) [Использование зон в Angular для повышения производительности](https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html)
 4) [xxxxxx](xxxxxxxxxx)
 5) [xxxxxx](xxxxxxxxxx)
-
- 
-  
