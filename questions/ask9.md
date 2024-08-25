@@ -57,3 +57,5 @@ export class CmpChlChlComponent extends BaseComponent {
 }
 
 ```
+
+![alt text](image-4.png)

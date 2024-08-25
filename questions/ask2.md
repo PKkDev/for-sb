@@ -51,3 +51,5 @@ null: Это означает, что объект пуст и не указыв
     console.log(`isNaN(d)`, isNaN(d));
 
 ```
+
+![alt text](image-1.png)

@@ -55,3 +55,5 @@
     console.log(`f1 == f3`, f1 == f3);
 
 ```
+
+![alt text](image-2.png)

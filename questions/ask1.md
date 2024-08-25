@@ -32,3 +32,6 @@
     console.log('b, b1', b, b1)
 
 ```
+
+
+![alt text](image.png)

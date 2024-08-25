@@ -42,3 +42,5 @@
     console.log(`c + e`, c + e);
 
 ```
+
+![alt text](image-3.png)
