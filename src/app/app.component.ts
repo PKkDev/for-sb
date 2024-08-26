@@ -118,6 +118,7 @@ export class AppComponent {
     console.log('--------------')
 
     console.log(`Boolean("0")`, Boolean("0"));
+    console.log(`Boolean("1")`, Boolean("1"));
     console.log(`Boolean(0)`, Boolean(0));
     console.log(`Boolean("")`, Boolean(""));
     console.log(`Boolean("   ")`, Boolean("   "));
@@ -131,6 +132,7 @@ export class AppComponent {
     console.log(`c + d`, c + d);
     console.log(`c / e`, c / e);
     console.log(`c + e`, c + e);
+    console.log(`e + c`, e + c);
 
     console.log('--------------')
 
