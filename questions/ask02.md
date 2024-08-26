@@ -2,7 +2,7 @@
 
 ### Вопрос
 
-В чем разница между Null, NaN и undefined?
+1) В чем разница между Null, NaN и undefined?
 
 ### Ответ
 

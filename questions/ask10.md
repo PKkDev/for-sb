@@ -2,7 +2,7 @@
 
 ### Вопрос 
 
- Что такое `ControlValueAccessor`? 
+1) Что такое `ControlValueAccessor`? 
 
 ### Ответ
 
