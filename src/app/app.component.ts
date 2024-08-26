@@ -138,6 +138,9 @@ export class AppComponent {
     console.log(`Number(false)`, Number(false));
     console.log(`Number(undefined)`, Number(undefined));
     console.log(`Number(null)`, Number(null));
+
+    console.log('--------------')
+
   }
 
 } 

@@ -2,12 +2,46 @@
 
 ### Вопрос
 
-Какие бывают типы данных в js?
+1) Какие бывают типы данных в js?
+2) Как вы работаете с датами?
 
 ### Ответ
 
 1) [Хранение по ссылке и по значению](https://doka-guide.vercel.app/js/ref-type-vs-value-type/)
 2) [Преобразование типов + Типы данных](https://doka-guide.vercel.app/js/typecasting/)
+
+
+```javascript
+
+    // 1. Undefined
+    typeof undefined === 'undefined'
+
+    // 2. Boolean, логический
+    typeof true === 'boolean'
+    typeof false === 'boolean'
+
+    // 3. Number, число
+    typeof 42 === 'number'
+    typeof 4.2 === 'number'
+    typeof -42 === 'number'
+    typeof Infinity === 'number'
+    typeof -Infinity === 'number'
+
+    // 4. String, строка
+    typeof '' === 'string'
+    typeof 'string' === 'string'
+
+    // 5. Symbol, символ, ES6
+    typeof Symbol() === 'symbol'
+
+    // 6. BigInt, большое число, ES6
+    typeof 9007199254740991n === 'bigint'
+    typeof BigInt(9007199254740991) === 'bigint'
+
+    // 7. Null
+    typeof null === 'object'
+
+```
  
 Ссылочные и примитивные (значимые)
 
