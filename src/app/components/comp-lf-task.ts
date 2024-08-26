@@ -20,7 +20,6 @@ import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleCh
 //     };
 // }
 
-
 @Component({ template: `` })
 class BaseComponent implements OnInit, AfterViewInit, AfterContentInit, OnChanges {
     protected name!: string;
@@ -29,7 +28,7 @@ class BaseComponent implements OnInit, AfterViewInit, AfterContentInit, OnChange
     ngAfterContentInit(): void { console.log(`${this.name} - ngAfterContentInit`); }
     ngOnChanges(_changes: SimpleChanges): void { console.log(`${this.name} - ngOnChanges`); }
 }
- 
+
 @Component({
     selector: 'app-cmp-par',
     template: `<app-cmp-chl></app-cmp-chl>`
