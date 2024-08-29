@@ -7,7 +7,7 @@
 
 ### Ответ
 
-1) [Дирекативы](https://angular.dev/guide/directives)
+1) [Директивы](https://angular.dev/guide/directives)
 1) [Декораторы](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
 Angular директивы используются для изменения внешнего вида или поведения DOM-элемента. Выделяют три типа директив:
@@ -39,3 +39,30 @@ Angular директивы используются для изменения в
 3) NgSwitch -Набор директив, которые переключаются между альтернативными представлениями.
 
 #### декораторы
+
+### задача
+
+```javascript
+ 
+@Directive({ selector: '[adHost1]' })
+export class AdDirective1 { }
+
+@Directive({ selector: 'adHost2' })
+export class AdDirective2 { }
+
+{
+    constructor(private host: ComponentClass)
+}
+
+```
+
+```html
+ 
+<adHost1></adHost1>
+<adHost2> </adHost2>
+
+<div adHost1></div>
+<div adHost2></div>
+
+```
+

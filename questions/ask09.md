@@ -7,12 +7,15 @@
 3) Какие знаете способы передачи информации между компонентами?
 4) Что такое `standalone` компоненты и зачем они нужны?
 
+1) Что будет если если убрать @Component({ template: `` }) ?
+2) Обязательно ли использовать именно @Component
+3) Если убрать из implements будут ли вызываться методы?
+
 ### Ответ
 
 1) [Anatomy of a component](https://angular.dev/guide/components)
 2) [standalone](https://angular.dev/guide/components/importing)
 3) [xxxxxx](xxxxxxx)
-
 
 1) @Input()
 2) @Output() и EventEmitter
