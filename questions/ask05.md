@@ -20,6 +20,15 @@
 
 ```javascript
 
+    const arr1 = [
+      { d: 'a' },
+      { d: 'b' }
+    ]
+
+    const arr2 = [...arr1]
+    arr2[0].d = 'sssss'
+    
+    console.log("arr1", arr1, 'arr2', arr2);
  
 
 ```
