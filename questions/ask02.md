@@ -7,8 +7,8 @@
 ### Ответ
 
 1) [stackoverflow](https://stackoverflow.com/questions/50320711/what-is-the-difference-between-null-nan-and-undefined-in-javascript)
-1) [medium](https://medium.com/@stheodorejohn/null-nan-and-undefined-understanding-absence-and-invalidity-in-javascript-5ebd3fa918ee)
-1) [Типы данных](https://learn.javascript.ru/types)
+2) [medium](https://medium.com/@stheodorejohn/null-nan-and-undefined-understanding-absence-and-invalidity-in-javascript-5ebd3fa918ee)
+3) [Типы данных](https://learn.javascript.ru/types)
 
 NaN: Not a number: Как следует из названия, оно используется для обозначения того, что значение объекта не является числом. Существует множество способов, которыми вы можете сгенерировать эту ошибку, одним из которых являются недопустимые математические операции, такие как 0/0 или sqrt(-1)
 

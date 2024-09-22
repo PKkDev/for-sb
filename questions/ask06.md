@@ -8,7 +8,7 @@
 ### Ответ
 
 1) [Директивы](https://angular.dev/guide/directives)
-1) [Декораторы](https://www.typescriptlang.org/docs/handbook/decorators.html)
+2) [Декораторы](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
 Angular директивы используются для изменения внешнего вида или поведения DOM-элемента. Выделяют три типа директив:
 

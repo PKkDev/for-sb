@@ -8,7 +8,7 @@
 ### Ответ
 
 1) [viewencapsulationemulated](https://angular.dev/guide/components/styling#viewencapsulationemulated) 
-1) [angular-host-context](https://blog.angular-university.io/angular-host-context/) 
+2) [angular-host-context](https://blog.angular-university.io/angular-host-context/) 
 
 У каждого компонента есть параметр view encapsulation, который определяет, как фреймворк определяет стили компонента. Существует три режима инкапсуляции вида: `Emulated`, `ShadowDom` и `None`
 

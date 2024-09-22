@@ -7,7 +7,7 @@
 ### Ответ
 
 1) [stackoverflow](https://stackoverflow.com/questions/37364973/what-is-the-difference-between-promises-and-observables) 
-1) [Promises and Observable](https://www.geeksforgeeks.org/what-is-the-difference-between-promises-and-observables-in-angular/) 
+2) [Promises and Observable](https://www.geeksforgeeks.org/what-is-the-difference-between-promises-and-observables-in-angular/) 
 
 `Promise` обрабатывает одиночное событие, когда асинхронная операция завершается или завершается сбоем.
 
