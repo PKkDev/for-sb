@@ -25,24 +25,17 @@ null: Это означает, что объект пуст и не указыв
     let c = 0;
     let d = NaN;
 
-    console.log(`typeof(a)`, typeof (a));
-    console.log(`typeof(b)`, typeof (b));
-    console.log(`typeof(c)`, typeof (c));
-    console.log(`typeof(d)`, typeof (d));
-    
-    console.log('--------------')
-
-    console.log(`a ?? 'none'`, a ?? 'none');
-    console.log(`b ?? 'none'`, b ?? 'none');
-    console.log(`c ?? 'none'`, c ?? 'none');
-    console.log(`d ?? 'none'`, d ?? 'none');
+    console.log(typeof(a));
+    console.log(typeof(b));
+    console.log(typeof(c));
+    console.log(typeof(d)); 
 
     console.log('--------------')
 
-    if (a) { console.log(`if (a)`, true) } else { console.log(`if (a)`, false) }
-    if (b) { console.log(`if (b)`, true) } else { console.log(`if (b)`, false) }
-    if (c) { console.log(`if (c)`, true) } else { console.log(`if (c)`, false) }
-    if (d) { console.log(`if (d)`, true) } else { console.log(`if (d)`, false) }
+    if (a) { console.log(true) } else { console.log(false) }
+    if (b) { console.log(true) } else { console.log(false) }
+    if (c) { console.log(true) } else { console.log(false) }
+    if (d) { console.log(true) } else { console.log(false) }
 
     console.log('--------------')
 
@@ -52,4 +45,4 @@ null: Это означает, что объект пуст и не указыв
 
 ```
 
-![alt text](image-1.png)
+![alt text](image-6.png)

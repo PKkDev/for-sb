@@ -8,10 +8,10 @@ import { Component, NgZone,} from '@angular/core';
 export class AppComponent {
 
   constructor(private ngZone: NgZone) {
-    this.taskOne();
+    // this.taskOne();
     this.taskTwo();
-    this.taskThree();
-    this.taskFour(); 
+    // this.taskThree();
+    // this.taskFour(); 
 
     ngZone.runOutsideAngular(()=>{})
   }
@@ -49,13 +49,6 @@ export class AppComponent {
 
     console.log('--------------')
 
-    console.log(`a ?? 'none'`, a ?? 'none');
-    console.log(`b ?? 'none'`, b ?? 'none');
-    console.log(`c ?? 'none'`, c ?? 'none');
-    console.log(`d ?? 'none'`, d ?? 'none');
-
-    console.log('--------------')
-
     if (a) { console.log(`if (a)`, true) } else { console.log(`if (a)`, false) }
     if (b) { console.log(`if (b)`, true) } else { console.log(`if (b)`, false) }
     if (c) { console.log(`if (c)`, true) } else { console.log(`if (c)`, false) }
@@ -71,41 +64,61 @@ export class AppComponent {
   private taskThree() {
     console.log('--------------taskThree--------------')
 
-    let a: any = "6";
-    let b: any = "3";
-    let b1 = b;
+    let a = null;
+    let b = undefined; 
     console.log(`a == b`, a == b);
-    console.log(`a === b`, a === b);
-    console.log(`b1 == b`, b1 == b);
-    console.log(`b1 === b`, b1 === b);
+    console.log(`a === b`, a === b); 
 
-    console.log('--------------')
+    let c = '23';
+    let d: any = 23; 
+    console.log(`c == d`, c == d);
+    console.log(`c === d`, c === d); 
 
-    let d = null;
-    let e = undefined;
-    let c = 0;
-    console.log(`d == e`, d == e);
-    console.log(`d === e`, d === e);
-    console.log(`c == e`, c == e);
-    console.log(`c === e`, c === e);
+    console.log(`a ?? 'none'`, a ?? 'none');
+    console.log(`b ?? 'none'`, b ?? 'none');
+    console.log(`c ?? 'none'`, c ?? 'none');
+    console.log(`d ?? 'none'`, d ?? 'none');
 
-    console.log('--------------')
+    console.log(`0 ?? 100`, 0 ?? 100);
+    console.log(`'' ?? 100`, '' ?? 100);
+    console.log(`0 || 100`, 0 || 100);
+    console.log(`'' || 100`, '' || 100);
 
-    console.log(`5 == new Number(5)`, 5 == new Number(5));
-    console.log(`5 === new Number(5)`, 5 === new Number(5));
+    // let a: any = "6";
+    // let b: any = "3";
+    // let b1 = b;
+    // console.log(`a == b`, a == b);
+    // console.log(`a === b`, a === b);
+    // console.log(`b1 == b`, b1 == b);
+    // console.log(`b1 === b`, b1 === b);
 
-    console.log('--------------')
+    // console.log('--------------')
 
-    console.log(`"abs" == "abs"`, "abs" == "abs");
-    console.log(`"abs" === "abs"`, "abs" === "abs");
+    // let d = null;
+    // let e = undefined;
+    // let c = 0;
+    // console.log(`d == e`, d == e);
+    // console.log(`d === e`, d === e);
+    // console.log(`c == e`, c == e);
+    // console.log(`c === e`, c === e);
 
-    console.log('--------------')
+    // console.log('--------------')
 
-    let f = { name: "aaa" };
-    let f1 = { name: "aaa" };
-    let f3 = f1;
-    console.log(`f == f1`, f == f1);
-    console.log(`f1 == f3`, f1 == f3);
+    // console.log(`5 == new Number(5)`, 5 == new Number(5));
+    // console.log(`5 === new Number(5)`, 5 === new Number(5));
+
+    // console.log('--------------')
+
+    // console.log(`"abs" == "abs"`, "abs" == "abs");
+    // console.log(`"abs" === "abs"`, "abs" === "abs");
+
+    // console.log('--------------')
+
+    // let f = { name: "aaa" };
+    // let f1 = { name: "aaa" };
+    // let f3 = f1;
+    // console.log(`f == f1`, f == f1);
+    // console.log(`f1 == f3`, f1 == f3);
   }
 
   private taskFour() {
