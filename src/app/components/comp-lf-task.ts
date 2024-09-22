@@ -1,4 +1,4 @@
-import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, Injectable, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 // @FeelNameDecorator('parent')
 
@@ -20,7 +20,8 @@ import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, SimpleCh
 //     };
 // }
 
-@Component({ template: `` })
+// @Component({ template: `` })
+@Injectable()
 class BaseComponent implements OnInit, AfterViewInit, AfterContentInit, OnChanges {
     protected name!: string;
     ngOnInit(): void { console.log(`${this.name} - ngOnInit`); }

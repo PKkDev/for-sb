@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CmpChlChlComponent, CmpChlComponent, CmpParComponent } from './components/comp-lf-task';
+import { AdDirective1, AdDirective2 } from './components/dr';
 
 @NgModule({
   declarations: [
     AppComponent,
     CmpParComponent,
     CmpChlComponent,
-    CmpChlChlComponent
+    CmpChlChlComponent,
+    AdDirective1,
+    AdDirective2
   ],
   imports: [
     BrowserModule,
@@ -19,3 +22,5 @@ import { CmpChlChlComponent, CmpChlComponent, CmpParComponent } from './componen
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
