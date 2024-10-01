@@ -16,6 +16,12 @@
 4) structuredClone() NodeJS > 17
 5) различные библиотеки (lodash.)
 
+
+### JSON.parse(JSON.stringify())
+
+У этого метода есть ограничение — копируемые данные должны быть сериализуемы.
+Вот примеры несериализуемых данных: примитив undefined, функция, symbol - при вызове JSON.stringify получаем undefined
+
 ### задача
 
 ```javascript
@@ -30,5 +36,4 @@
     
     console.log("arr1", arr1, 'arr2', arr2);
  
-
 ```
