@@ -33,3 +33,16 @@
 
 С помощью `<ng-template>` вы можете определить содержимое шаблона, которое отображается Angular только тогда, когда вы, прямо или косвенно, специально проинструктируете его об этом, позволяя вам иметь полный контроль над тем, как и когда отображается содержимое.
 
+### задача
+
+```html
+ 
+<ng-container
+    [ngTemplateOutlet]="template"
+    [ngTemplateOutletContext]="{ 
+        $implicit: someValue, 
+        columnType: column.type, 
+    }">
+</ng-container>
+
+``` 
